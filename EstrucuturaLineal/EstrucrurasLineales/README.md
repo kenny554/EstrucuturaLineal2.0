@@ -1,3 +1,3 @@
-Hola clases de colas 
+Hola ejercicios pilas y colas
 autor Alexis
 
