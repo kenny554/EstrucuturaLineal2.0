@@ -1,6 +1,7 @@
 /*@Alexis Guaman */
 
 import Materia.ListasEnlazadas.ListaEnlazada;
+import Materia.ListasEnlazadas.ListaEnlazadasGenericas;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -88,6 +89,27 @@ public class App {
         lista.deleteNode(3);
         lista.print();
         lista.size();
+        System.out.println("El tamanio es" + lista.size());
 
+        // lISTA GENERICA
+        ListaEnlazadasGenericas<Integer> lista1 = new ListaEnlazadasGenericas<>();
+
+        // Agregar nodos a la lista
+        lista1.addNode(10);
+        lista1.addNode(20);
+        lista1.addNode(30);
+        lista1.addNode(40);
+
+        // Imprimir la lista
+        lista.print();
+
+        // Eliminar un nodo de la lista
+        lista.deleteNode(20);
+
+        // Imprimir la lista después de eliminar un nodo
+        lista.print();
+
+        // Imprimir el tamaño de la lista
+        System.out.println("El tamaño de la lista es: " + lista1.size());
     }
 }
